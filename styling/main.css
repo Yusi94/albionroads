@@ -1,0 +1,430 @@
+@import url('fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800');
+
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #262627;
+    --bg-accent: #5a4231;
+
+    --clr-primary: ivory;
+    --clr-accent: #e9631b;
+
+    --ff-primary: "Montserrat", sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+}
+
+.darkscale {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95vw;
+    max-width: 37.5em; 
+    height: 90vh;
+    max-height: 45em;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    font-size: 0.875rem;
+    text-align: justify;
+    z-index: 2;
+    background-color: var(--bg-secondary);
+    padding: 1em;
+    border-radius: 0.3125rem;
+    animation: slideIn .75s cubic-bezier(.08,.82,.17,1) forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    50% {
+        transform: translate(-50%, -45%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hide-notification {
+    animation: slideOut .75s cubic-bezier(.08,.82,.17,1) forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -55%);
+    }
+    100% {
+        transform: translate(-50%, 100%);
+    }
+}
+
+.notification-container div {
+    align-self: flex-end;
+    margin-bottom: .5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.notification-container h1 {
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.notification-container ul {
+    padding: 2em;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #7b7b7b var(--bg-secondary);
+}
+
+.notification-container li {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+/* header styling defined in header.js */
+header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 
+        4px 4px 16px 2px rgba(15, 15, 15, 0.6),
+        8px 8px 40px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.video-container {
+    position: relative;
+    z-index: -1;
+    padding-bottom: 28.125%;
+    height: 0;
+    transition: padding-bottom 1s ease;
+}
+
+.hide-video-container {
+    padding-bottom: 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .header-toggle {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/angle-circle-arrow-up.png") no-repeat center;
+    background-size: 2.875rem;
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 1s ease;
+ }
+
+ .rotate-header-toggle {
+     transform: translateX(-50%) rotate(180deg);
+ }
+
+/* #link-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#link-container a {
+    margin-right: 3rem;
+    font-size: .75rem;
+    text-decoration: none;
+} */
+
+/* grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: minmax(8.575rem, 11.15rem) 1fr;
+    grid-template-rows: 6rem 25.65rem;
+    gap: 15px;
+    max-width: 75rem;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.grid__search-bar {
+    position: relative;
+    border-bottom: 2px solid var(--bg-secondary);
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: stretch;
+    align-self: center;
+}
+
+.grid__search-bar::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    width: 0;
+    border-bottom: 2px solid var(--clr-accent);
+    transition: width .1s ease-in;  
+}
+
+.grid__search-bar:hover::before {
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .grid__search-bar::before {
+        transition: none;
+    }
+}
+
+input[type='search'] {
+    width: 100%;
+    background-color: var(--bg-primary);
+    color: var(--clr-primary);
+    border: none;
+}
+
+input[type='search']:focus {
+    outline: none;
+}
+
+.grid__roads-list {
+    border: 2px solid var(--bg-secondary);
+    overflow: hidden;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid__roads-list:hover {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #7b7b7b #262627;
+}
+
+.road {
+    list-style: none;    
+    cursor: pointer;
+}
+
+.item-container {
+    display: block;
+    padding: 0.75em 0;
+    padding-left: 0.5em;
+    font-size: 0.8125em;
+    font-weight: 600;
+    transition: background-color .1s ease-out;
+}
+
+/* 
+    separating the animation trigger from the animation effect to stop the "doom flickering"
+    hover is still attached to the <li> element but the effect is triggered on the <span> element
+*/
+.road:hover .item-container {
+    background-color: #7b7b7b;
+    transition: background-color .1s ease-out;
+}
+
+.grid__road-description {
+    display: none;
+    align-self: center;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.road-description {
+    text-align: center;
+}
+
+.road-description h2 {
+    color: var(--clr-accent);
+}
+
+.road-description h3 {
+    display: inline;
+}
+
+.grid__road-map {
+    display: none;
+    position: relative;
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.road-map img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 740px) {
+    .video-container {
+        padding-bottom: 11.76rem;
+        height: 0;
+        transition: padding-bottom 1s ease;
+    }
+
+    .hide-video-container {
+        padding-bottom: 0;
+    }
+
+    .grid {
+        grid-template-rows: repeat(2, 6rem) 1fr;
+        gap: 15px;
+    }
+
+    .grid__search-bar {
+        align-self: end;
+    }
+
+    .grid__roads-list {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .grid__road-description {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .grid__road-map {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 6rem) 1fr;
+        row-gap: 15px;
+    }
+
+    .grid__search-bar {
+        align-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .grid__roads-list {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .grid__road-description {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .grid__road-map {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+}
+
+/* div container for hover over icon */
+.hover-over-icon {
+    background-image: url('../images/hover-display-resource-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 4.5%;
+    height: 4.5%;
+}
+
+.hover-over-icon:hover >  
+#resource-info-img {
+    height: 88.5px;
+    width: 128.5px;
+    visibility: visible;
+}
+
+#resource-info-img {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%); 
+    z-index: 1;
+    height: 0;
+    transition: height .2s ease-in; 
+    visibility: hidden;    
+}
+
+/* footer styling defined in 'footer.js */
+footer {
+    align-self: flex-end;
+    margin-top: auto;
+    min-width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 75rem;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 0.625rem;
+    text-align: left;
+}
+
+.info-button {
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border: 2px solid var(--clr-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.info-button p {
+    color: var(--clr-primary);
+    font-weight: bold;
+}
+
+/*  */
+
+input[type=text]::-ms-clear {  
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+
+input[type=text]::-ms-reveal {  
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}

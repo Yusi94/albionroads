@@ -1,0 +1,425 @@
+export const roadData = `[ 
+{ 
+    "id":"0",
+    "roadName":"Casitos-Avaelum",
+    "zoneTier":"5",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"2",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            }
+        ]
+    }
+}, 
+{
+    "id":"1",
+    "roadName":"Ceres-Iooinum",
+    "zoneTier":"4",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"3",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"2",
+    "roadName":"Ceros-Aeaylum",
+    "zoneTier":"5",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"4",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            },
+            { 
+                "x":"52.4",
+                "y":"39.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"3",
+    "roadName":"Cetitos-Avixnum",
+    "zoneTier":"5",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"3",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"4",
+    "roadName":"Cetos-Obaelos",
+    "zoneTier":"4",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"0",
+    "resourceTooltipImages": 
+    {
+        "image":
+        []
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        []
+    }
+},
+{
+    "id":"5",
+    "roadName":"Cieitos-Obaelos",
+    "zoneTier":"4",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"0",
+    "resourceTooltipImages": 
+    {
+        "image":
+        []
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        []
+    }
+},
+{
+    "id":"6",
+    "roadName":"Conitos-Ofailos",
+    "zoneTier":"6",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"0",
+    "resourceTooltipImages": 
+    {
+        "image":
+        []
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        []
+    }
+},
+{
+    "id":"7",
+    "roadName":"Conos-Avaelum",
+    "zoneTier":"5",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"2",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            }
+        ]
+    }
+},
+{
+    "id":"8",
+    "roadName":"Cuyites-Iooinum",
+    "zoneTier":"4",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"3",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"9",
+    "roadName":"Cynos-Avixnum",
+    "zoneTier":"4",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"3",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"10",
+    "roadName":"Fasitos-Oyuctum",
+    "zoneTier":"8",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"4",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            },
+            { 
+                "x":"52.4",
+                "y":"39.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"11",
+    "roadName":"Fieites-Unavtum",
+    "zoneTier":"-",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"3",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"12",
+    "roadName":"Filitos-Uzazlum",
+    "zoneTier":"8",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"6",
+    "resourceTooltipImages": 
+    {
+        "image":
+        [
+            { "woodN":"./images/hiros-iuaerom/hiros-iuaerom-woodN.png" },
+            { "woodE":"./images/hiros-iuaerom/hiros-iuaerom-WoodE.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" },
+            { "stone":"./images/hiros-iuaerom/hiros-iuaerom-stone.png" }
+        ]
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        [
+            {               
+                "x":"53.6",
+                "y":"26.31578947368421"                
+            },
+            { 
+                "x":"69.6",
+                "y":"43.21329639889196"                
+            },
+            { 
+                "x":"62.4",
+                "y":"68.14404432132964"
+            },
+            { 
+                "x":"52.4",
+                "y":"39.14404432132964"
+            },
+            { 
+                "x":"52.4",
+                "y":"39.14404432132964"
+            },
+            { 
+                "x":"52.4",
+                "y":"39.14404432132964"
+            }
+        ]
+    }
+},
+{
+    "id":"13",
+    "roadName":"Filos-Abalam",
+    "zoneTier":"8",
+    "roadMap":"./images/hiros-iuaerom/hiros-iuaerom.png",
+    "noOfResourceSpots":"0",
+    "resourceTooltipImages": 
+    {
+        "image":
+        []
+    },
+    "resourceSpotCoords":
+    {
+        "coordinate":
+        []
+    }
+}
+]`;
